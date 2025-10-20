@@ -1,10 +1,18 @@
+import HeroSection from "@/components/HeroSection";
+import HowWeBringSection from "@/components/HowWeBringSection";
+import WhatWeDoSection from "@/components/WhatWeDoSection";
+import WhyUsSection from "@/components/WhyUsSection";
 import Link from "next/link";
 
 
 export default function Home() {
   return (
     <div className="flex flex-col">
-      Home Page
+     <HeroSection />
+     <WhyUsSection />
+     <WhatWeDoSection />
+     <HowWeBringSection />
+   
 
       <Link className="link" href={'/about'} > About us page</Link>
       <Link className="link" href={'/blog'} > Blog page</Link>
