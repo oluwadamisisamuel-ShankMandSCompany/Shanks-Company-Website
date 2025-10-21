@@ -22,7 +22,7 @@ function WhatWeDoSection() {
 
 
         <div className='flex bg-[#F6F6F6] mt-[50px] w-[92%]'>
-            <Image src={'/images/bridge.png'} alt='bridge-image' width={460} height={650}  />
+            <Image src={'/images/bridge.png'} alt='bridge-image' className="rounded-sm" width={460} height={650}  />
             <div className='pl-[70px] pt-[50px]'>
                 <h2 className='font-[Figtree] font-medium text-[20px] mb-4 '>Custom Software Development</h2>
                 <p className='font-[Figtree] text-[#656565] text-sm w-[70%] mb-8 '>We build tailored software solutions designed to solve complex business challenges, streamline operations, and drive growth.</p>
