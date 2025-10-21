@@ -1,5 +1,7 @@
 import HeroSection from "@/components/HeroSection";
 import HowWeBringSection from "@/components/HowWeBringSection";
+import OurWorks from "@/components/OurWorks";
+import Testimonials from "@/components/Testimonials";
 import InfiniteCarousel from "@/components/ui/InfiniteCarousel";
 import WhatWeDoSection from "@/components/WhatWeDoSection";
 import WhyUsSection from "@/components/WhyUsSection";
@@ -14,6 +16,8 @@ export default function Home() {
      <WhatWeDoSection />
      <HowWeBringSection />
      <InfiniteCarousel />
+     <OurWorks />
+     <Testimonials />
    
 
       <Link className="link" href={'/about'} > About us page</Link>

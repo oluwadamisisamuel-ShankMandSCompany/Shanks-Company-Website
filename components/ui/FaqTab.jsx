@@ -4,7 +4,6 @@ import { PiPlus } from "react-icons/pi";
 
 
 function FaqTab({question}) {
-
  const [answerOpen, setAnswerOpen] = useState(false)
   return (
     <div onClick={()=> setAnswerOpen(prev => !prev)} className='flex justify-between  items-center border-b border-[#9F9F9F] py-6 pr-[90px] text-black cursor-pointer'>
