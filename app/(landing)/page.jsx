@@ -1,3 +1,5 @@
+import BlogSection from "@/components/BlogSection";
+import FaqSection from "@/components/FaqSection";
 import HeroSection from "@/components/HeroSection";
 import HowWeBringSection from "@/components/HowWeBringSection";
 import MeetTheTeam from "@/components/MeetTheTeam";
@@ -22,6 +24,8 @@ export default function Home() {
      <Testimonials />
      <MeetTheTeam />
      <PartnersSection />
+     <BlogSection />
+     <FaqSection />
    
 
       <Link className="link" href={'/about'} > About us page</Link>

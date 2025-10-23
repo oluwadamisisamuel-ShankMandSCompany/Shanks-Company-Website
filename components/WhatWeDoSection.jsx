@@ -8,10 +8,20 @@ import FaqTab from "./ui/FaqTab";
 function WhatWeDoSection() {
 
   const [rightSide, setRightSide] = useState(false);
+    const [openIndex, setOpenIndex] = useState(null);
+
+    const handleToggle = (index) => {
+        setOpenIndex(openIndex === index ? null : index);
+    };
 
   
 
-  const faq = ["Web Development", "Mobile App Development", "MVP Development", "Quality Assurance"]
+  const data = [
+    {question:"Web Development"},
+    {question:"Mobile App Development"},
+    {question:"MVP Development"},
+    {question:"Quality Assurance"},
+]
 
 
   return (
@@ -60,9 +70,9 @@ function WhatWeDoSection() {
         </div>
         
         <ul>
-            {faq.map((question, index) =>( 
+            {data.map((faq, index) =>( 
             <li key={index}>
-                <FaqTab question= {question} />
+                <FaqTab faq= {faq} index={index} openIndex={openIndex}   handleToggle={handleToggle}  />
             </li>
             ))}
         </ul>
